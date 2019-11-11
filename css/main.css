@@ -30,10 +30,10 @@ img {
   display: block;
 }
 
-@media only screen and (min-width: 38em) {
+@media only screen and (min-width: 25em) {
 
   .dino:nth-child(even) {
-    display: flex;
+    display: block;
   }
 
   .dino {
@@ -42,7 +42,7 @@ img {
 
 }
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 38em) {
 
   .dino-wrap {
     flex-wrap: nowrap;
@@ -51,4 +51,21 @@ img {
   .dino {
     width: 100%;
   }
+
+  .dino:first-child {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .dino:first-child {
+    display: block;
+  }
+
+  .dino {
+    display: block;
+  }
+
 }
